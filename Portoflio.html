@@ -8,62 +8,86 @@
 		<link href="Portfolio.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
+
+		<nav class="navbar navbar-inner navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+			    <ul class="nav navbar-nav navbar-right">
+			   		<li><a href="#About">About</a></li>
+			   		<li><a href="#">Resume</a></li>
+			   		<li><a href="#">Projects</a></li> 
+			   		<li><a href="#">Contact</a></li> 
+		  	    </ul>
+			</div>
+		</nav>
+
 		<section id="introScreen">
-			<div id="introTextBox">
+			<div id="introTextBox" class="box">
 				<div id="introText">
 					<h1 class="largeHeight">STEVEN ZHENG</h1>
 					<h4>B.S. COMPUTER SCIENCE STUDENT, UCSD</h4>
 				</div>
 			</div>
-			<div id="introLinkBox">
-				<div class="iconLink">
-					<a href="#">
-						<img src="Github Logo.png"/>
-					</a>
+			<div id="introLinksBox" class="box">
+				<div id="introLinks">
+					<div class="iconLink">
+						<a target="_blank" href="https://github.com/szzheng">
+							<img src="Github Logo.png"/>
+						</a>
+					</div>
+					<div class="iconLink">
+						<a target="_blank" href="https://www.facebook.com/stevenzheng">
+							<img src="Facebook Logo.png"/>
+						</a>
+					</div>
+					<div class="iconLink">
+						<a href="mailto:stevenzheng3791@gmail.com?Subject=Portfolio Inquiry" target="_top">
+							<img src="Mail Icon.png"/>
+						</a>
+					</div>
+			    </div>
+			</div>
+		    
+		    <div id="scrollDownIconBox" class="box">
+		 	   <div id="scrollDownIcon">
+					<img src="Scroll Down Icon.png"/>
 				</div>
-				<div class="iconLink">
-					<a href="#">
-						<img src="Facebook Logo.png"/>
-					</a>
-				</div>
-				<div class="iconLink">
-					<a href="#">
-						<img src="Mail Icon.png"/>
-					</a>
-				</div>
-		    </div>
+			</div>
 		</section>
 
+		<section id="aboutSection">
+			<h1 class="sectionHeader">About</h1>
+			<p class="description">Hi, I'm Steven and I'm currently pursuing a Bachelor's Degree in Computer Science at UCSD. I'm greatly interested in <b>Human-Computer Interaction</b> and <b>UI/UX design</b>, and I apply those concepts whenever I can break away from my studies to develop <b>iOS apps</b> and <b>websites</b>.</p>
+			<p class="description">When I'm not working, you can expect me playing tennis. Additionally, my other interests include hiking and meandering through nature, playing the piano and the erhu (a traditional Chinese instrument), and learning new languages and cultures.</p>
+
+			<div id="blurbs">
+
+				<div id="resume">
+					<a href="#" id="resumeButton">Resume</a>
+				</div>
 
 
-
-		<div id="blurbs">
-			<div id="educationBlurb">
-				<img class="icon" src="Education_Icon.png"/>
-				<h1 class="blurbTitle">Education</h1>
-				<ul>
-					<li>UCSD - <font color="#09B300">Computer Science</font></li>
-					<li>B.S. (Currently Pursuing) - <font color="#09B300">GPA: 3.93</font></li>
-				</ul>
+				<div id="educationBlurb">
+					<img class="icon" src="Education_Icon.png"/>
+					<h1 class="blurbTitle">Education</h1>
+					<ul>
+						<li>UCSD - <font color="#09B300">Computer Science</font></li>
+						<li>B.S. (Currently Pursuing) - <font color="#09B300">GPA: 3.93</font></li>
+					</ul>
+				</div>
+				<div id="experienceBlurb">
+					<img class="icon" src="Experience_Icon.png"/>
+					<h1 class="blurbTitle">Experience</h1>
+					<ul>
+						<li>Jet Propulsion Laboratory - <font color="#09B300">Summer 2015</font></li>
+					</ul>
+				</div>
 			</div>
-			<div id="experienceBlurb">
-				<img class="icon" src="Experience_Icon.png"/>
-				<h1 class="blurbTitle">Experience</h1>
-				<ul>
-					<li>Jet Propulsion Laboratory - <font color="#09B300">Summer 2015</font></li>
-				</ul>
-			</div>
-			<div id="resume">
-				<a href="#" id="resumeButton">Resume</a>
-			</div>
-		</div>
+		</section>
 
 		<section>
 			<h1>Projects</h1>
 		</section>
-		<section>
-			<h1>About Me</h1>
-		</section>
+
 
 
 
