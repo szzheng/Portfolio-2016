@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width, initial-scale=1">
-		<title>Using Bootstrap - 1st website</title>
+		<title>Steven Zheng</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="Portfolio.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
 
-		<nav class="navbar navbar-inner navbar-default navbar-fixed-top">
+		<nav class="navbar-inner navbar-default navbar-fixed-top">
+
 			<div class="container-fluid">
 			    <ul class="nav navbar-nav navbar-right">
-			   		<li><a href="#About">About</a></li>
-			   		<li><a href="#">Resume</a></li>
-			   		<li><a href="#">Projects</a></li> 
-			   		<li><a href="#">Contact</a></li> 
+			   		<li><a href="#aboutSection">About</a></li>
+			   		<li><a target="_blank" href="StevenZhengResume.pdf">Resume</a></li>
+			   		<li><a href="#projectsSection">Projects</a></li> 
+			   		<li><a href="#contactSection">Contact</a></li> 
 		  	    </ul>
 			</div>
 		</nav>
@@ -62,7 +63,7 @@
 			<div id="blurbs">
 
 				<div id="resume">
-					<a href="#" id="resumeButton">Resume</a>
+					<a target="_blank" href="StevenZhengResume.pdf" class="button">Resume (PDF)</a>
 				</div>
 
 
@@ -82,17 +83,44 @@
 					</ul>
 				</div>
 			</div>
+			<hr>
 		</section>
 
-		<section>
-			<h1>Projects</h1>
+		<section id="projectsSection">
+			<h1 class="sectionHeader">Projects</h1>
+			<div>
+				<p class="description"><b>Taskr</b> - Android app that fairly manages tasks between a group of people by optimizing the balance of difficulties and durations of the tasks between group members.</p>
+				<img class="projectImage" src="Taskr Logo.png"/>
+			</div>
+			<div>
+				<p class="description"><b>FriendsnFood</b> - Mobile web app that automatically coordinates and schedules lunches, dinners, etc. with friends at UCSD.</p>
+				<img class="projectImage" src="FriendsnFood Logo.png"/>
+			<hr>
 		</section>
 
+		<section id="contactSection">
+			<h1 class="sectionHeader">Contact</h1>
+			<div id="contactInfo">
+				<div id="emailAddress">
+					<a href="mailto:stevenzheng3791@gmail.com?Subject=Portfolio Inquiry" target="_top">
+						<img src="Mail Icon 2.png"/>
+					</a>
+					<a href="mailto:stevenzheng3791@gmail.com?Subject=Portfolio Inquiry" target="_top">stevenzheng3791@gmail.com</a>
+				</div>
+				<div id="phoneNumber">
+					<img src="Phone Icon.jpg"/>
+					(408) 858-9214
+				</div>
+			</div>
+		</section>
+
+		<!--<div class="footer">© 2016 Steven Zheng. Custom built.</div>-->
 
 
 
-		<script scr="js/jquery-1.12.1.min.js"> </script>
-		<script scr="js/bootstrap.min.js"></script>
+		<script src="js/jquery-1.12.1.min.js"> </script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>
-	</body>
+		<script src="Portfolio.js"></script>
+	</body> 
 </html>
